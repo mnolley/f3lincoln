@@ -63,8 +63,28 @@ nav {
   text-decoration: none;
 }
 
+
 .has-submenu:hover > .submenu {
   display: block;
+}
+
+/* Hero Banner */
+.hero {
+  background-image: url('https://images.unsplash.com/photo-1526401281623-449ab4c1124b?auto=format&fit=crop&w=1350&q=80');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin: 0 0 10px;
+}
+
+.hero .mission {
+  font-size: 1.5em;
 }
 
 .tagline {
