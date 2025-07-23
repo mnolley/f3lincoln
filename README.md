@@ -1,6 +1,6 @@
 # F3 Lincoln
 
-This repository contains the source for the **F3 Lincoln** website. It is a simple static website that can be served using GitHub Pages.
+This repository contains the source for the **F3 Lincoln** website. It is a static website inspired by the layout of [F3 Omaha](https://f3omaha.com/).
 
 ## Development
 

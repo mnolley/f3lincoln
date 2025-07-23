@@ -8,28 +8,54 @@
 </head>
 <body>
   <header>
-    <h1>F3 Lincoln</h1>
-    <p>Fitness. Fellowship. Faith.</p>
+    <div class="container">
+      <h1 class="logo">F3 Lincoln</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Schedule</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Fitness, Fellowship, Faith</h2>
+      <p>Join us for free workouts around Lincoln, NE</p>
+      <a href="#schedule" class="btn">See Schedule</a>
+    </div>
+  </section>
 
-  <main>
-    <section>
-      <h2>Welcome</h2>
-      <p>Welcome to the F3 Lincoln website. We are a group of men focused on Fitness, Fellowship, and Faith. Join us for free workouts and camaraderie.</p>
-    </section>
-  </main>
+  <section id="about">
+    <div class="container">
+      <h2>About F3</h2>
+      <p>F3 stands for Fitness, Fellowship, and Faith. Our mission is to plant, grow, and serve small workout groups for men for the invigoration of male community leadership.</p>
+    </div>
+  </section>
+
+  <section id="schedule">
+    <div class="container">
+      <h2>Workout Schedule</h2>
+      <ul class="workouts">
+        <li>Monday – 5:30 AM – Antelope Park</li>
+        <li>Wednesday – 5:30 AM – Pioneers Park</li>
+        <li>Friday – 5:30 AM – Holmes Lake</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Email <a href="mailto:info@f3lincoln.com">info@f3lincoln.com</a></p>
+    </div>
+  </section>
 
   <footer>
-    <p>&copy; 2024 F3 Lincoln</p>
+    <p>&copy; 2024 F3 Lincoln &bull; Design inspired by <a href="https://f3omaha.com/" target="_blank" rel="noopener">F3 Omaha</a></p>
   </footer>
 
   <script src="js/main.js"></script>
