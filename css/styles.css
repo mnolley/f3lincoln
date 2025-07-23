@@ -7,17 +7,34 @@ body {
 }
 
 .site-header {
-  background: #333;
-  color: #fff;
+  background: #fff;
+  color: #000;
   padding: 10px;
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #ddd;
 }
 
 .logo {
   font-size: 1.5em;
   font-weight: bold;
   margin-right: 20px;
+  display: flex;
+  align-items: center;
+  color: #000;
+}
+
+.logo .circle {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  background: #000;
+  color: #fff;
+  margin-right: 8px;
+  font-size: 0.9em;
 }
 
 nav {
@@ -37,11 +54,15 @@ nav {
 }
 
 .menu > li > a {
-  color: #fff;
+  color: #333;
   text-decoration: none;
   font-weight: bold;
   padding: 10px;
   display: block;
+}
+
+.menu > li > a:hover {
+  background: #f0f0f0;
 }
 
 .submenu {
@@ -49,23 +70,34 @@ nav {
   position: absolute;
   left: 0;
   top: 100%;
-  background: #555;
+  background: #f9f9f9;
   list-style: none;
   margin: 0;
   padding: 0;
   min-width: 200px;
+  border: 1px solid #ddd;
 }
 
 .submenu li a {
   display: block;
   padding: 10px;
-  color: #fff;
+  color: #333;
   text-decoration: none;
+  font-size: 0.9em;
+}
+
+.submenu li a:hover {
+  background: #eee;
 }
 
 
 .has-submenu:hover > .submenu {
   display: block;
+}
+
+.has-submenu > a::after {
+  content: " \25BE";
+  font-size: 0.8em;
 }
 
 /* Hero Banner */
