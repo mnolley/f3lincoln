@@ -109,12 +109,14 @@ nav {
 
 /* Hero Banner */
 .hero {
-  background-image: url('https://images.unsplash.com/photo-1526401281623-449ab4c1124b?auto=format&fit=crop&w=1350&q=80');
-  background-size: cover;
-  background-position: center;
-  color: #fff;
+  background: url('/assets/images/hero-bg.jpg') center center / cover no-repeat;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
   text-align: center;
-  padding: 100px 20px;
 }
 
 .hero h1 {
