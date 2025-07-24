@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>F3 Lincoln - F3 Lincoln Locations</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-sA+4j6138wS8+fZFi7Kcv16O3EOai9nDdP3X28L4cXs="
+    crossorigin=""
+  />
 </head>
 <body>
   <header class="site-header">
@@ -41,8 +47,67 @@
 
   <main>
     <section>
-      <h2>F3 Lincoln Locations</h2>
-      <p>Information about workout locations in and around Lincoln.</p>
+      <div id="map"></div>
+    </section>
+
+    <section>
+      <input type="text" id="location-filter" placeholder="Filter locations...">
+      <div class="table-container">
+        <table id="location-table">
+          <thead>
+            <tr>
+              <th>Day</th>
+              <th>Location</th>
+              <th>Address</th>
+              <th>Sector</th>
+              <th>Workout Type</th>
+              <th>Site Q</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Monday</td>
+              <td><img class="table-icon" src="https://img.icons8.com/ios-filled/16/marker.png" alt="">Woods Park</td>
+              <td>3200 J St, Lincoln, NE</td>
+              <td>Downtown</td>
+              <td>Bootcamp</td>
+              <td>John Doe</td>
+            </tr>
+            <tr>
+              <td>Tuesday</td>
+              <td><img class="table-icon" src="https://img.icons8.com/ios-filled/16/marker.png" alt="">Pioneers Park</td>
+              <td>3201 S Coddington Ave, Lincoln, NE</td>
+              <td>West</td>
+              <td>Bootcamp</td>
+              <td>Jane Smith</td>
+            </tr>
+            <tr>
+              <td>Wednesday</td>
+              <td><img class="table-icon" src="https://img.icons8.com/ios-filled/16/marker.png" alt="">Antelope Park</td>
+              <td>1650 Memorial Dr, Lincoln, NE</td>
+              <td>East</td>
+              <td>Bootcamp</td>
+              <td>Mike Johnson</td>
+            </tr>
+            <tr>
+              <td>Thursday</td>
+              <td><img class="table-icon" src="https://img.icons8.com/ios-filled/16/marker.png" alt="">Holmes Lake Park</td>
+              <td>70th &amp; Normal Blvd, Lincoln, NE</td>
+              <td>South</td>
+              <td>Bootcamp</td>
+              <td>Sarah Lee</td>
+            </tr>
+            <tr>
+              <td>Friday</td>
+              <td><img class="table-icon" src="https://img.icons8.com/ios-filled/16/marker.png" alt="">University Place</td>
+              <td>4800 Huntington Ave, Lincoln, NE</td>
+              <td>North</td>
+              <td>Bootcamp</td>
+              <td>Chris Brown</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
   </main>
 
@@ -50,6 +115,11 @@
     <p>&copy; 2024 F3 Lincoln</p>
   </footer>
 
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-o8oG6RUK9M8WuJtodFVya2xr7tUNjYU2z0zKbuw3trM="
+    crossorigin=""
+  ></script>
   <script src="js/main.js"></script>
 </body>
 </html>
