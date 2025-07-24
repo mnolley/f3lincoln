@@ -137,6 +137,78 @@ footer {
   color: #333;
 }
 
+/* New site footer */
+.site-footer {
+  background: #111;
+  color: #fff;
+  padding-top: 40px;
+}
+
+.site-footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px 20px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 20px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column li {
+  margin-bottom: 6px;
+}
+
+.footer-social a {
+  margin-right: 10px;
+}
+
+.footer-social img {
+  width: 24px;
+  height: 24px;
+}
+
+.legal {
+  background: #000;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.8em;
+}
+
+.legal a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-social a {
+    margin-right: 5px;
+  }
+}
+
 /* Core Principles Section */
 .core-principles {
   display: flex;
