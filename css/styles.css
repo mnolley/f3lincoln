@@ -250,3 +250,48 @@ footer {
   color: #fff;
   text-decoration: underline;
 }
+
+/* Locations page */
+#map {
+  width: 100%;
+  height: 400px;
+  margin-bottom: 20px;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+#location-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#location-table th,
+#location-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#location-table th {
+  background: #f4f4f4;
+  text-align: left;
+}
+
+#location-table tbody tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+.table-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
+#location-filter {
+  margin-bottom: 10px;
+  padding: 6px;
+  width: 100%;
+  max-width: 300px;
+}
