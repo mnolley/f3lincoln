@@ -210,3 +210,43 @@ footer {
     margin: 0 0 20px;
   }
 }
+
+/* Call to Action Section */
+.call-to-action {
+  background-image: url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1350&q=80');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: #fff;
+  padding: 60px 20px;
+}
+
+.call-to-action h2 {
+  font-size: 2.5em;
+  margin: 0 0 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  background: #0049d1;
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cta-button:hover {
+  background: #003aab;
+}
+
+.cta-secondary {
+  margin-top: 20px;
+  font-size: 0.9em;
+}
+
+.cta-secondary a {
+  color: #fff;
+  text-decoration: underline;
+}
