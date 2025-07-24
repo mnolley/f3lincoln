@@ -276,41 +276,51 @@ footer {
 }
 
 /* Three Fs Section */
-.three-fs .fs-band {
+.three-fs .f-section {
   display: flex;
   align-items: center;
   padding: 40px 20px;
 }
 
-.three-fs .fs-band:nth-child(odd) {
-  background: #fff;
-}
-
-.three-fs .fs-band:nth-child(even) {
+.three-fs .f-section:nth-child(even) {
+  flex-direction: row-reverse;
   background: #f5f5f5;
 }
 
-.three-fs img {
+.three-fs .f-section:nth-child(odd) {
+  background: #fff;
+}
+
+.three-fs .f-image {
   width: 40%;
   max-width: 300px;
   margin-right: 20px;
+}
+
+.three-fs .f-section:nth-child(even) .f-image {
+  margin-right: 0;
+  margin-left: 20px;
+}
+
+.three-fs .f-image img {
+  width: 100%;
   object-fit: cover;
 }
 
-.three-fs .fs-text {
+.three-fs .f-text {
   flex: 1;
 }
 
-.three-fs .fs-text h3 {
+.three-fs .f-text h3 {
   margin-top: 0;
 }
 
 @media (max-width: 600px) {
-  .three-fs .fs-band {
-    flex-direction: column;
+  .three-fs .f-section {
+    flex-direction: column !important;
     text-align: center;
   }
-  .three-fs img {
+  .three-fs .f-image {
     width: 100%;
     margin: 0 0 20px;
   }
