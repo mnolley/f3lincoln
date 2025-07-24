@@ -3,18 +3,21 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
+  padding: 70px 0 0;
   line-height: 1.6;
   background-color: #000;
 }
 
 .site-header {
-  background: #fff;
-  color: #000;
-  padding: 10px;
+  background-color: #000;
+  padding: 1rem 2rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #ddd;
 }
 
 .logo {
@@ -23,7 +26,7 @@ body {
   margin-right: 20px;
   display: flex;
   align-items: center;
-  color: #000;
+  color: #fff;
 }
 
 .logo .circle {
@@ -33,7 +36,7 @@ body {
   line-height: 40px;
   text-align: center;
   border-radius: 50%;
-  background: #000;
+  background: #ff6600;
   color: #fff;
   margin-right: 8px;
   font-size: 0.9em;
@@ -48,6 +51,7 @@ nav {
   display: flex;
   margin: 0;
   padding: 0;
+  gap: 2rem;
 }
 
 .menu > li {
@@ -56,15 +60,16 @@ nav {
 }
 
 .menu > li > a {
-  color: #333;
+  color: #fff;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 500;
+  font-size: 1rem;
   padding: 10px;
   display: block;
 }
 
 .menu > li > a:hover {
-  background: #f0f0f0;
+  color: #ff6600;
 }
 
 .submenu {
