@@ -21,25 +21,14 @@ body {
 }
 
 .logo {
-  font-size: 1.5em;
-  font-weight: bold;
   margin-right: 20px;
   display: flex;
   align-items: center;
-  color: #fff;
 }
 
-.logo .circle {
-  display: inline-block;
-  width: 40px;
+.logo img {
   height: 40px;
-  line-height: 40px;
-  text-align: center;
-  border-radius: 50%;
-  background: #ff6600;
-  color: #fff;
-  margin-right: 8px;
-  font-size: 0.9em;
+  width: auto;
 }
 
 nav {
